@@ -1,7 +1,7 @@
-﻿using GoodFoods.Api.BusinessLogic;
-using GoodFoods.Api.Models;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RecipeBook.ServiceLibrary.Domains;
+using RecipeBook.ServiceLibrary.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +13,11 @@ namespace GoodFoods.Api.Controllers
     [ApiController]
     public class RecipeController : ControllerBase
     {
-        public IActionResult AddNewRecipe(RecipeModel recipeModel)
+        [HttpGet]
+        public IActionResult AddNewRecipe([FromQuery] RecipeEntity recipeEntity)
         {
-            var businessLogic = new RecipeBusinessLogic();
-            businessLogic.SaveRecipe(recipeModel);
+            var businessLogic = new Recipe();
+            businessLogic.SaveRecipe(recipeEntity);
 
             return Ok();
         }
