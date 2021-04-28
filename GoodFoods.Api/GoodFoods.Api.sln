@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoodFoods.Api", "GoodFoods.Api\GoodFoods.Api.csproj", "{4788247E-E86C-4DD8-A945-68A0F9F186B9}"
-EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{691BF8E5-3A9A-4D9F-8755-5A194DD3E740}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeBook.ServiceLibrary", "RecipeBook.ServiceLibrary\RecipeBook.ServiceLibrary.csproj", "{F991E3DC-4AC6-452C-90A7-72192BCDF59A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{81B513A8-C841-4FFB-9AA4-4CB9EB2BEAB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{03B1F100-6045-4487-B86B-ADA7DA896176}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B2C94601-7AF6-406B-A8E3-A4584ABD37B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoodFoods.Api", "src\GoodFoods.Api\GoodFoods.Api.csproj", "{7B78CD54-0762-427F-B8C4-F3D7C67090D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeBook.ServiceLibrary", "src\RecipeBook.ServiceLibrary\RecipeBook.ServiceLibrary.csproj", "{EF8B7A93-F513-46CF-B2D7-E15A201CF2FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,21 +21,25 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4788247E-E86C-4DD8-A945-68A0F9F186B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4788247E-E86C-4DD8-A945-68A0F9F186B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4788247E-E86C-4DD8-A945-68A0F9F186B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4788247E-E86C-4DD8-A945-68A0F9F186B9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{691BF8E5-3A9A-4D9F-8755-5A194DD3E740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{691BF8E5-3A9A-4D9F-8755-5A194DD3E740}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{691BF8E5-3A9A-4D9F-8755-5A194DD3E740}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{691BF8E5-3A9A-4D9F-8755-5A194DD3E740}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F991E3DC-4AC6-452C-90A7-72192BCDF59A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F991E3DC-4AC6-452C-90A7-72192BCDF59A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F991E3DC-4AC6-452C-90A7-72192BCDF59A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F991E3DC-4AC6-452C-90A7-72192BCDF59A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B78CD54-0762-427F-B8C4-F3D7C67090D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B78CD54-0762-427F-B8C4-F3D7C67090D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B78CD54-0762-427F-B8C4-F3D7C67090D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B78CD54-0762-427F-B8C4-F3D7C67090D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF8B7A93-F513-46CF-B2D7-E15A201CF2FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF8B7A93-F513-46CF-B2D7-E15A201CF2FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF8B7A93-F513-46CF-B2D7-E15A201CF2FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF8B7A93-F513-46CF-B2D7-E15A201CF2FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7B78CD54-0762-427F-B8C4-F3D7C67090D7} = {03B1F100-6045-4487-B86B-ADA7DA896176}
+		{EF8B7A93-F513-46CF-B2D7-E15A201CF2FF} = {03B1F100-6045-4487-B86B-ADA7DA896176}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0504E53A-57A0-4DF9-8D8E-596EBD5A4C6B}
